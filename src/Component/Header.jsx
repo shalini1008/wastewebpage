@@ -21,7 +21,7 @@ function Header() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:pl-8">
       {[
         { label: "Home", icon: "M3 9.5L12 2.5L21 9.5V20.5H15V14.5H9V20.5H3V9.5Z", link: "/" },
         { label: "Snap & Sell", icon: "M12 2C7.03 2 3 6.03 3 11C3 15.97 7.03 20 12 20C16.97 20 21 15.97 21 11C21 6.03 16.97 2 12 2ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z", link: "/snap-and-sell" },
@@ -57,20 +57,22 @@ function Header() {
   return (
     <Navbar className="sticky top-0 z-10 mx-auto max-w-screen-xl p-2">
       <div className="flex items-center justify-between">
-        <Typography
-          as="a"
-          href="/"
-          className="mr-4 cursor-pointer py-1.5 text-xl font-bold"
-        >
-         {/* <img src="/logo.jpg" alt="BinBandhu" style={{ width: "70px", height: "70px" }} /> */}
-          <span>BinBandhu</span>
-        </Typography>
-        <div className="hidden lg:block">{navList}</div>
-        <Button
-          variant="gradient"
-          size="sm"
-          className="hidden lg:inline-block"
-        >
+      <Typography>
+      <header style={headerStyle}>
+      <img
+        src="/logo.jpg"
+        alt="BinBandhu"
+        style={imageStyle}
+      />
+    </header>
+</Typography>
+<div className="hidden lg:block">{navList}</div>
+<Button
+  variant="gradient"
+  size="sm"
+  className="hidden lg:inline-block"
+>
+
           <span>Contact Us</span>
         </Button>
         <IconButton
@@ -116,4 +118,19 @@ function Header() {
   );
 }
 
+const headerStyle = {
+  display: "flex",
+  alignItems: "center",
+  position: "absolute",
+  top: "-30px",
+  left: "-250px",
+  zIndex: "10",
+};
+
+const imageStyle = {
+  width: "250px", // Increased width
+  height: "250px", // Increased height
+};
+
 export default Header;
+
