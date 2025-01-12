@@ -55,7 +55,7 @@ function Header() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-10 mx-auto max-w-screen-xl p-2">
+    <Navbar className="relative mx-auto max-w-screen-xl p-2 z-20">
       <div className="flex items-center justify-between">
       <Typography>
       {/* <header style={headerStyle}>
@@ -128,8 +128,8 @@ const headerStyle = {
 };
 
 const imageStyle = {
-  width: "250px", // Increased width
-  height: "250px", // Increased height
+  width: "200px", // Increased width
+  height: "200px", // Increased height
 };
 
 export default Header;
