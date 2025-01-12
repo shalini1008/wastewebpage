@@ -1,5 +1,4 @@
 import React from 'react';
-import './Carousel.css'
 
 import bgdonut1 from '/back.png'
 
@@ -13,6 +12,7 @@ const garbage = '/garbage.jpg'
 const ecof = '/eco.png'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+import './Carousel.css'
 
 
 const slider = [
