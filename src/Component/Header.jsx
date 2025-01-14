@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   Navbar,
   MobileNav,
@@ -37,9 +38,9 @@ function Header() {
           />
         </svg>
  
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
+        <Link to="/scheduling" className="flex items-center">
+    Scheduling
+       </Link>
       </Typography>
       <Typography
         as="li"
@@ -108,7 +109,7 @@ function Header() {
           />
         </svg>
         <a href="#" className="flex items-center">
-          Sell and buy
+          Sell
         </a>
       </Typography>
     </ul>
