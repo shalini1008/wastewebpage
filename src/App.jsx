@@ -1,4 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import Scheduling from './scheduling';
+import CongestedForm from './Carousel/congestedform';
+import NonCongestedForm from './Carousel/noncongestedform';
 import './App.css'
 import Home from './pages/Home'
 import Product from './pages/Product';
@@ -16,6 +21,10 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/scheduling" element={<Scheduling />} />
+          <Route path="/congestedform" element={<CongestedForm />} />
+          <Route path="/noncongestedform" element={<NonCongestedForm />} />
           <Route path="/" element={<Home/>}/>
           <Route path="/products" element={<Product/>}/>
           <Route path="/snapNsell" element={<SnapNsell/>}/>
@@ -27,7 +36,8 @@ function App() {
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
