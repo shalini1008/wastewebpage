@@ -120,5 +120,3 @@ return (
 }
 
 export default Carousel
-
-

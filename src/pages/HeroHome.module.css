@@ -1,136 +1,135 @@
 :root {
-    --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
-    --color-dark: #0b2447;
-    --color-bg: #04152d;
-  
-    --font-roboto: "Roboto", sans-serif;
-    --font-sans: "Arial", sans-serif;
-  }
-  
+  --color-text: #fff;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: #04152d;
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-sans: "Arial", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 5%;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+  max-width: 80%;
+}
+
+.title {
+  font-size: 40px; /* Reduced size */
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: 1px;
+}
+
+.title span {
+  color: red; /* Color for BinBandhu */
+}
+
+.description {
+  font-size: 18px; /* Reduced size */
+  font-family: var(--font-sans);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.contactBtn:hover {
+  background-color: #3b58a0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.heroImg {
+  width: 45%;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heroImg:hover {
+  transform: scale(1.05);
+}
+
+.topBlur,
+.bottomBlur {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.topBlur {
+  width: 50vw;
+  height: 50vw;
+  min-width: 100px;
+  top: -100px;
+  left: -10vw;
+}
+
+.bottomBlur {
+  width: 70vw;
+  height: 50vw;
+  min-width: 300px;
+  top: 250px;
+  right: -20vw;
+}
+
+@media screen and (max-width: 830px) {
   .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding: 0 5%;
-    z-index: 1;
-  }
-  
-  .content {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    color: var(--color-text);
-    z-index: 1;
+    text-align: center;
+  }
+
+  .content {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .heroImg {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 30px; 
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px; 
     max-width: 80%;
   }
-  
-  .title {
-    font-size: 40px; /* Reduced size */
-    font-weight: 900;
-    margin-bottom: 20px;
-    font-family: var(--font-roboto);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    letter-spacing: 1px;
-  }
-  
-  .title span {
-    color: red; /* Color for BinBandhu */
-  }
-  
-  .description {
-    font-size: 18px; /* Reduced size */
-    font-family: var(--font-sans);
-    margin-bottom: 40px;
-    line-height: 1.6;
-    word-wrap: break-word;
-    max-width: 100%;
-  }
-  
-  .contactBtn {
-    text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 15px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease;
-  }
-  
-  .contactBtn:hover {
-    background-color: #3b58a0;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-  }
-  
-  .heroImg {
-    width: 45%;
-    z-index: 1;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .heroImg:hover {
-    transform: scale(1.05);
-  }
-  
-  .topBlur,
-  .bottomBlur {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(25, 55, 109, 0.7);
-    filter: blur(100px);
-    z-index: 0;
-  }
-  
-  .topBlur {
-    width: 50vw;
-    height: 50vw;
-    min-width: 100px;
-    top: -100px;
-    left: -10vw;
-  }
-  
-  .bottomBlur {
-    width: 70vw;
-    height: 50vw;
-    min-width: 300px;
-    top: 250px;
-    right: -20vw;
-  }
-  
-  @media screen and (max-width: 830px) {
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .content {
-      align-items: center;
-      margin-bottom: 30px;
-    }
-  
-    .heroImg {
-      width: 60%;
-      margin-bottom: 20px;
-    }
-  
-    .title {
-      font-size: 30px; 
-      margin-bottom: 20px;
-    }
-  
-    .description {
-      font-size: 16px; 
-      max-width: 80%;
-    }
-  }
-  
-  
-  
+}
+
+

@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper';
 import 'swiper/swiper.min.css';  // Correct CSS import for swiper 11.x
 
-import './Carousel.css';
+// import './Carousel.css';
 
 const slider = [
   {
