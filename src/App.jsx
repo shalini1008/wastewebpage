@@ -5,6 +5,9 @@ import Product from './pages/Product';
 import SnapNsell from './pages/snapNsell/SnapNsell';
 import UserProfile from './pages/user/UserProfile';
 import History from './pages/user/History';
+import Education from './pages/Edu';
+import Signup from './pages/Registration/Signup';
+import Login from './pages/Registration/Login';
 // import Login from './pages/Login'
 // import Signup from './pages/Signup'
 
@@ -18,6 +21,9 @@ function App() {
           <Route path="/snapNsell" element={<SnapNsell/>}/>
           <Route path="/profile" element={<UserProfile/>}/>
           <Route path="/profileHistory" element={<History/>}/>
+          <Route path="/Education" element={<Education />} />
+          <Route path="/signup" element={<Signup/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </Router>
     </>

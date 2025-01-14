@@ -28,7 +28,7 @@ function Header() {
         { label: "Products", icon: "M20.49 8.93L12.99 3.86L5.51 8.93L5.5 15.07L12.99 20.14L20.49 15.07L20.49 8.93Z", link: "/products" },
         { label: "Schedule", icon: "M7 10H5V8H7V10ZM11 10H9V8H11V10ZM15 10H13V8H15V10ZM19 10H17V8H19V10ZM7 14H5V12H7V14ZM11 14H9V12H11V14ZM15 14H13V12H15V14ZM19 14H17V12H19V14ZM17 20H7C5.9 20 5 19.1 5 18V7C5 5.9 5.9 5 7 5H9V3H15V5H17C18.1 5 19 5.9 19 7V18C19 19.1 18.1 20 17 20Z", link: "/schedule" },
         { label: "Education", icon: "M12 2L2 7L12 12L22 7L12 2ZM12 22V14L2 9L12 14L22 9L12 22Z", link: "/education" },
-        { label: "Login", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/login" },
+        { label: "Login/Signup", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/signup" },
       ].map((item) => (
         <Typography
           as="li"
@@ -55,7 +55,7 @@ function Header() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-10 mx-auto max-w-screen-xl p-2">
+    <Navbar className="relative mx-auto max-w-screen-xl p-2 z-20">
       <div className="flex items-center justify-between">
       <Typography>
       {/* <header style={headerStyle}>
@@ -128,8 +128,8 @@ const headerStyle = {
 };
 
 const imageStyle = {
-  width: "250px", // Increased width
-  height: "250px", // Increased height
+  width: "200px", // Increased width
+  height: "200px", // Increased height
 };
 
 export default Header;

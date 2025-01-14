@@ -27,7 +27,6 @@ function SnapNsell() {
     return (
         <Layout>
          <div className="flex justify-center items-center h-screen bg-gray-900">
-            {/* Left Section: Image or Preview */}
             <div className="flex-1 flex justify-center items-center">
                 {imagePreview ? (
                     <img
@@ -37,9 +36,9 @@ function SnapNsell() {
                     />
                 ) : (
                     <img
-                        src="https://via.placeholder.com/500x400?text=Waste+Segregation"
+                        src="./sellpic.png"
                         alt="Waste Segregation"
-                        className="rounded-lg shadow-lg max-w-full h-auto"
+                        className="rounded-lg shadow-lg max-w-full h-auto ml-16"
                     />
                 )}
             </div>
