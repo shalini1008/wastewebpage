@@ -12,6 +12,7 @@ function Signup() {
             return toast.error("All fields are required")
         }
         toast.success("Sign up sucessful");
+        localStorage.setItem('user', JSON.stringify({ email, password }));
         navigate("/"); 
     }
     return (

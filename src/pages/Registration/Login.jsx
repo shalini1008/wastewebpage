@@ -8,6 +8,7 @@ function Login() {
     const navigate = useNavigate(); 
 
     const loginf = async () => {
+        localStorage.setItem('user', JSON.stringify({ email, password }));
         toast.success("Login successful");
         navigate("/"); 
     };
