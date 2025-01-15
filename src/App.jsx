@@ -12,6 +12,7 @@ import Login from './pages/Registration/Login';
 import UserProfile from './pages/User/UserProfile';
 import History from './pages/User/History';
 import NonCongestedForm from './pages/NonCongestedForm';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/Education" element={<Education />} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/contactus" element={<Contact/>} />
         </Routes>
       </Router>
     </>

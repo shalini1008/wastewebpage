@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bgdonut1 from '/back.png'
+import bgimage from '/back.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
@@ -57,11 +57,11 @@ return (
       <div>
           <div className='carousel-content'>
             
-              <h1>BinBandhu</h1>
+              <h1 >BinBandhu</h1>
               <hr />
               <p>One Tap to Clean, One Step to Green</p>
               <p>A simple change for a brighter tomorrow.</p>
-              <a href="#" className='slider-btn'>Contact Us</a>
+              <a href="/contactus" className='slider-btn'>Contact Us</a>
           </div>
       </div>
 
@@ -113,7 +113,7 @@ return (
               ))
           }
       </Swiper>
-      <img src={bgdonut1} alt="bg image" className='bgdonut1' />
+      <img src={bgimage} alt="bg image" className='bgdonut1' />
 
   </div>
 )

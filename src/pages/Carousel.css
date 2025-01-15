@@ -33,7 +33,7 @@
     letter-spacing: 0.8px;
     font-size: 6rem;
     line-height: 1.1;
-    background-color: #00a4aa;
+    background-color: rgb(74 222 128);
 
     background-size: 100%;
     -webkit-background-clip: text;
@@ -42,7 +42,7 @@
 
 .carousel-content hr {
     display: block;
-    background: #00a4aa;
+    background: rgb(74 222 128);
     height: 0.25rem;
     width: 6.25rem;
     border: none;

@@ -46,7 +46,7 @@ function SnapNsell() {
             {/* Right Section: Form */}
             <div className="flex-1 flex justify-center items-center">
                 <div className="bg-gray-800 px-10 py-10 rounded-xl w-full max-w-md">
-                    <h1 className="text-center text-white text-xl mb-4 font-bold">Sell Waste</h1>
+                    <h1 className="text-center text-green-400 text-xl mb-4 font-bold">Sell Waste</h1>
                     <div>
                         <input
                             type="text"
