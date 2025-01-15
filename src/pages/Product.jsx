@@ -9,11 +9,11 @@ function Product() {
           <div className="lg:w-1/2 w-full mb-6 lg:mb-10">
             <h1
               className="sm:text-3xl text-2xl font-medium title-font mb-2  text-green-400"
-              style={{ color: mode === 'dark' ? 'white' : '' }}
+              // style={{ color: mode === 'dark' ? 'green' : '' }}
             >
               Explore Sustainable Solutions with BinBandhu
             </h1>
-            <div className="h-1 w-20 bg-pink-600 rounded"></div>
+            <div className="h-1 w-20 bg-green-400 rounded"></div>
           </div>
 
           <div className="flex flex-wrap -m-4">
@@ -55,7 +55,7 @@ function Product() {
                   <div className="flex justify-center">
                     <button
                       type="button"
-                      className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
+                      className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
                     >
                       Add To Cart
                     </button>
@@ -102,7 +102,7 @@ function Product() {
                   <div className="flex justify-center">
                     <button
                       type="button"
-                      className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
+                      className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
                     >
                       Add To Cart
                     </button>
@@ -149,7 +149,7 @@ function Product() {
                   <div className="flex justify-center">
                     <button
                       type="button"
-                      className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
+                      className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
                     >
                       Add To Cart
                     </button>
@@ -196,7 +196,7 @@ function Product() {
                   <div className="flex justify-center">
                     <button
                       type="button"
-                      className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
+                      className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full py-2"
                     >
                       Add To Cart
                     </button>

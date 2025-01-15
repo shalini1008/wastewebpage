@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './mehak.css';
+import './Scheduling.css';
+
 const Scheduling = () => {
   return (
-    <div className="scheduling-container">
-      <div className="section">
+    <div className="scheduling-container ">
+      {/* Congested Areas Section */}
+      <div className="section left">
         <div className="section-content">
-          <h2> CONGESTED AREAS</h2>
+          <h2>CONGESTED AREAS</h2>
           <p>
             <strong>Special Garbage Collection Services:</strong> Get access to exclusive waste drop-off points or alternative collectors to ensure your trash is disposed of responsibly.
           </p>
@@ -18,9 +20,16 @@ const Scheduling = () => {
           </p>
           <Link to="/congestedform" className="section-btn">Explore</Link>
         </div>
+        <div className="section-image">
+          <img src="/si1.png" alt="Congested Areas" />
+        </div>
       </div>
 
-      <div className="section">
+      {/* Non-Congested Areas Section */}
+      <div className="section right">
+        <div className="section-image">
+          <img src="/si2.png" alt="Non-Congested Areas" />
+        </div>
         <div className="section-content">
           <h2>NON-CONGESTED AREAS</h2>
           <p>

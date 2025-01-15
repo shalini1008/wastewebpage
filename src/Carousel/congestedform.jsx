@@ -63,7 +63,7 @@ function CongestedForm() {
 
     return (
         <Layout>
-            <div className="flex justify-center items-center h-screen bg-gray-900">
+            <div className="flex justify-center items-center h-screen bg-gray-900 m-7">
                 <div className="flex-1 flex justify-center items-center">
                     {imagePreview ? (
                         <img
