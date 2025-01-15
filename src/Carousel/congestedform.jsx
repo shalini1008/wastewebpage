@@ -3,7 +3,7 @@ import Layout from '../Component/Layout';
 import QRCode from 'react-qr-code';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import formImage from './image/form1.jpg';
+import formImage from '/form1.jpg';
 import { Multiselect } from 'multiselect-react-dropdown'; // Import the Multiselect component
 function CongestedForm() {
     const [imagePreview, setImagePreview] = useState(null);
@@ -75,7 +75,7 @@ function CongestedForm() {
                         <img
                             src={formImage}
                             alt="Waste Segregation"
-                            className="rounded-lg shadow-lg max-w-full h-auto ml-16"
+                            className="rounded-sm shadow-lg max-w-full h-full w-full ml-24 "
                         />
                     )}
                 </div>
