@@ -8,10 +8,10 @@ import {
 } from "@material-tailwind/react";
 import { useNavigate } from "react-router";
 
-
 function Header() {
   const [openNav, setOpenNav] = React.useState(false);
   const navigate = useNavigate();
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 960) {
@@ -21,6 +21,7 @@ function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   const [user, setUser] = useState(null);
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
@@ -36,9 +37,9 @@ function Header() {
         { label: "Products", icon: "M20.49 8.93L12.99 3.86L5.51 8.93L5.5 15.07L12.99 20.14L20.49 15.07L20.49 8.93Z", link: "/products" },
         { label: "Education", icon: "M12 2L2 7L12 12L22 7L12 2ZM12 22V14L2 9L12 14L22 9L12 22Z", link: "/education" },
         user
-        ? { label: "Profile", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/profile" }
-        : { label: "Login/Signup", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/signup" },
-    ].map((item) => (
+          ? { label: "Profile", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/profile" }
+          : { label: "Login/Signup", icon: "M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C8.67 14 5.68 15.34 4 17.5V20H20V17.5C18.32 15.34 15.33 14 12 14Z", link: "/signup" },
+      ].map((item) => (
         <Typography
           as="li"
           key={item.label}
@@ -64,25 +65,16 @@ function Header() {
   );
 
   return (
-    <Navbar className="bg-gray-900 text-gray-300 blackrelative mx-auto max-w-screen-xl p-2 z-20">
+    <Navbar className="bg-gray-900 relative mx-auto max-w-screen-xl p-2 z-20 shadow-none border-none">
       <div className="flex items-center justify-between">
-      <Typography>
-      {/* <header style={headerStyle}>
-      <img
-        src="/logo.jpg"
-        alt="BinBandhu"
-        style={imageStyle}
-      />
-    </header> */}
-</Typography>
-<div className="hidden lg:block">{navList}</div>
-<Button
-  variant="gradient"
-  size="sm"
-  className="hidden lg:inline-block"
-  onClick={() => navigate("/contactus")}
->
-
+        <Typography></Typography>
+        <div className="hidden lg:block">{navList}</div>
+        <Button
+          variant="gradient"
+          size="sm"
+          className="hidden lg:inline-block"
+          onClick={() => navigate("/contactus")}
+        >
           <span>Contact Us</span>
         </Button>
         <IconButton
@@ -128,20 +120,4 @@ function Header() {
   );
 }
 
-const headerStyle = {
-  display: "flex",
-  alignItems: "center",
-  position: "absolute",
-  top: "-30px",
-  left: "-250px",
-  zIndex: "10",
-};
-
-const imageStyle = {
-  width: "200px", // Increased width
-  height: "200px", // Increased height
-};
-
 export default Header;
-
-
