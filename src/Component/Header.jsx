@@ -67,8 +67,9 @@ function Header() {
   return (
     <Navbar className="bg-gray-900 relative mx-auto max-w-screen-xl p-2 z-20 shadow-none border-none">
       <div className="flex items-center justify-between">
-        <Typography>
-        </Typography>
+
+        <Typography></Typography>
+
         <div className="hidden lg:block">{navList}</div>
         <Button
           variant="gradient"
@@ -120,5 +121,6 @@ function Header() {
     </Navbar>
   );
 }
+
 
 export default Header;
