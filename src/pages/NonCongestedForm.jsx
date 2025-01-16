@@ -80,7 +80,7 @@ function NonCongestedForm() {
                         />
                     )}
             
-                    <Link to = "/">
+                    <Link to = "/CongestedForm">
                     <button className='text-center mt-12 p-3 border-1 border-red-700
                      rounded-lg bg-red-700 font-semi-bold text-lg'>Congested Location? Opt for Garbage Drop Off!</button>
                      </Link>

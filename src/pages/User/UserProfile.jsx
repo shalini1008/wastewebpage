@@ -30,7 +30,7 @@ function UserProfile() {
 return (
   <Layout>
     <div className="flex">
-  <div className="inline-block mt-10 max-w-l ml-28 py-6 px-16 bg-gray-800 text-center text-white shadow-md rounded-lg">
+  <div className="inline-block mt-10 max-w-l ml-44 py-6 px-16 bg-gray-800 text-center text-white shadow-md rounded-lg">
       <h2 className="text-4xl font-medium text-green-400">Your Profile</h2>
       <hr className="mt-4 mb-8 w-16 border-2 rounded-e border-green-400"/>
       <div className="mx-auto mb-6">
@@ -67,14 +67,14 @@ return (
       <h2 className="text-4xl font-medium text-green-400">Profile Analytics</h2>
       <hr className="mt-4 mb-8 w-16 border-2 rounded-e border-green-400"/>
       
-      <div className="flex flex-row space-x-8 text-center">
-          <div className="flex flex-col ml-0 border-2 rounded-full px-8 p-10">
+      <div className="flex flex-row space-x-20 text-center">
+          <div className="flex flex-col ml-0 border-2  rounded-full px-8 p-10">
               <h3 className="text-7xl font-semibold  text-gray-200">{userData.schedules}</h3>
-              <p className="text-gray-400">pickups initiated</p>
+              <p className="text-green-400">pickups initiated</p>
           </div>
-          <div className="ml-0  border-2 rounded-full py-8 p-2">
+          <div className=" border-2 rounded-full py-8 p-2">
               <h4 className="text-7xl font-semibold text-gray-200">{userData.sold}</h4>
-              <p className="text-gray-400">go-green garbage sold</p>
+              <p className="text-green-400">go-green garbage sold</p>
           </div>
           
       </div>

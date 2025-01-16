@@ -8,7 +8,7 @@ function History() {
 
     return (
         <Layout>
-        <div className="max-w-4xl mx-auto p-6 bg-gray-900 text-white shadow-md rounded-lg">
+        <div className="relative max-w-4xl mx-auto p-6 bg-gray-900 text-white shadow-md rounded-lg">
         <h2 className="text-4xl font-medium text-green-400">Transaction History</h2>
       <hr className="mt-4 mb-8 w-16 border-2 rounded-e border-green-400"/>
                   <ul className="space-y-8">
@@ -21,7 +21,7 @@ function History() {
                        <p> <span className="font-light text-gray-500"> Completed On </span> {transaction.date} </p>
                        <button className="border-2 mt-4 px-4 rounded text-lg"> Rate your experience </button>        
                        </div>
-                       <div className="inline-block ml-64">
+                       <div className="inline-block absolute right-16">
                        <img
               src={transaction.img}
               alt="User Profile"
