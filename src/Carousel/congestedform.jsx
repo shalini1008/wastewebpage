@@ -229,9 +229,10 @@ function CongestedForm() {
             {showModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                     <div className="bg-white p-6 rounded-lg shadow-lg relative max-w-md">
+                        {/* Dummy Download Icon (Unicode Character) */}
                         <div className="absolute top-2 left-2 text-2xl text-gray-500 cursor-pointer">
                             <span role="img" aria-label="download">
-                                📥
+                                📥 {/* Unicode Download Icon */}
                             </span>
                         </div>
                         <span
@@ -240,6 +241,7 @@ function CongestedForm() {
                         >
                             ×
                         </span>
+                        <br />
                         <h2 className="text-center font-bold text-gray-800 mb-4">
                             Here's your QR code for reward collection:
                         </h2>
