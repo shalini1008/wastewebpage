@@ -64,7 +64,9 @@ function Edu() {
 
   return (
     <Layout>
-      <div className="p-6 mt-28 px-40">
+      <div className="p-6 mt-6 px-40">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2  text-green-400">Know Waste Better</h1>
+        <div className="h-1 w-20 bg-green-400 rounded mb-10"></div>
         <div className="grid grid-cols-3 gap-6 mx-auto max-w-screen-lg sm:max-w-screen-xl">
           {/* Flashcards */}
           {flashcards.map((flashcard, index) => (
