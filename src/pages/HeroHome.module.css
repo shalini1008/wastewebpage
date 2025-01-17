@@ -40,11 +40,11 @@
 }
 
 .title span {
-  color: red; /* Color for BinBandhu */
+  color: red; 
 }
 
 .description {
-  font-size: 18px; /* Reduced size */
+  font-size: 18px; 
   font-family: var(--font-sans);
   margin-bottom: 40px;
   line-height: 1.6;
