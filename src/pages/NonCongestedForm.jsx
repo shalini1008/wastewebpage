@@ -50,6 +50,13 @@ function NonCongestedForm() {
 
     const closeModal = () => setShowModal(false);
 
+    const [message, setMessage] = useState(""); 
+
+    const handleClick = (text) => {
+        alert(text);
+        setMessage("Expected pickup time: 12:30 PM"); 
+    };
+
     const wasteTypeOptions = [
         { name: 'Organic waste', id: 'organicWaste' },
         { name: 'E-waste', id: 'ewaste' },
@@ -64,8 +71,8 @@ function NonCongestedForm() {
 
     return (
         <Layout>
-            <div className="flex justify-center items-center h-screen bg-gray-900">
-                <div className="flex flex-col justify-center items-center">
+            <div className="flex justify-center items-center h-screen bg-gray-900 mt-16 mb-32">
+                <div className="flex flex-col justify-center items-center -mt-32">
                     {imagePreview ? (
                         <img
                             src={imagePreview}
@@ -76,7 +83,7 @@ function NonCongestedForm() {
                         <img
                             src={pickup}
                             alt="Waste Segregation"
-                            className="rounded-sm shadow-lg max-w-full h-full w-full ml-24 "
+                            className="rounded-sm shadow-lg max-w-full h-full ml-24 "
                         />
                     )}
             
@@ -86,7 +93,7 @@ function NonCongestedForm() {
                      </Link>
                 </div>
 
-                <div className="flex-1 flex justify-center items-center">
+                <div className="flex-1 flex justify-center items-center ">
                     <form
                         onSubmit={handleFormSubmit}
                         className="bg-gray-800 px-10 py-10 rounded-xl w-full max-w-md"
@@ -128,20 +135,33 @@ function NonCongestedForm() {
                             placeholder="Phone Number"
                             value={formData.phoneNumber}
                             onChange={handleInputChange}
-                            className="bg-gray-600 mb-4 px-2 py-2 w-full rounded-lg text-white outline-none"
+                            className="bg-gray-600 mb-2 px-2 py-2 w-full rounded-lg text-white outline-none"
                         />
+                        <label className='text-lg'>
+                            Choose Location : 
+                        </label>
+                        <div className="flex flex-row space-x-3 mt-1">
+                <button
+                    type="button"
+                    className="bg-blue-500 text-white font-light px-4 py-2 w-full rounded-lg mb-4"
+                    onClick={() => handleClick("Pickup location added!")}
+                >
+                    Use Current Location
+                </button>
+                <button
+                    type="button"
+                    className="bg-blue-500 text-white font-light px-4 py-2 w-full rounded-lg mb-4"
+                    onClick={() => handleClick("Your saved location added!")}
+                >
+                    Your Saved Location
+                </button>
+            </div>
 
-                        <select
-                            name="timeSlot"
-                            value={formData.timeSlot}
-                            onChange={handleInputChange}
-                            className="bg-gray-600 mb-4 px-2 py-2 w-full rounded-lg text-white outline-none"
-                        >
-                            <option value="">Select a time slot</option>
-                            <option value="8AM-10AM">8AM - 10AM</option>
-                            <option value="10AM-12PM">10AM - 12PM</option>
-                            <option value="12PM-2PM">12PM - 2PM</option>
-                        </select>
+            {message !== "" && (
+                <div className="-mt-1 mb-1 text-gray-100 font-medium">
+                    {message}
+                </div>
+            )}
 
                         <select
                             name="segregated"
