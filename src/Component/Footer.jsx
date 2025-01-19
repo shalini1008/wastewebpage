@@ -2,7 +2,10 @@ import { Typography } from "@material-tailwind/react";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300 fixed;
+left-0
+bottom-0
+right-0">
       <div className="container mx-auto px-6 py-8">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8">
